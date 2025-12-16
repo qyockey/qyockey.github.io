@@ -1,0 +1,59 @@
+body {
+        margin: 0 auto;
+        max-width: 80ch;
+        padding: 0 0;
+}
+
+h1 {
+        font-variant-caps: small-caps;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+        font-family: "Georgia", "Times New Roman", serif;
+}
+
+p, li {
+        text-align: justify;
+}
+
+td {
+        padding-right: 1em;
+}
+
+colgroup {
+        display: table-column-group;
+}
+
+nav ul {
+        top: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+}
+
+nav ul li a {
+        display: block;
+        padding: 1em 1.5em 1em 0em;
+}
+
+a:link, a:active
+{
+	color: #04f;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #04f;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	/* color: #24a; */
+        /* TODO Revert */
+	color: #04f;
+	text-decoration: none;
+}
+

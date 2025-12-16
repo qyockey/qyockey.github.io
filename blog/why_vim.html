@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-US" xml:lang="en-US">
+  <head>
+    <title>Why Learn Vim?</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../asset/quinn_yockey_resume.pdf">Resume</a></li>
+        <li><a href="https://github.com/qyockey">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/quinnyockey">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+    <h1>Why Learn Vim?  And How?</h1>
+    <p>Written 2025-12-16</p>
+
+    <hr>
+    <h2>Intro</h2>
+    <p>
+    I have been actively using Vim for the past 4 years now.  I use Vim pretty
+    much any time I write text: coding, drafting emails, writing web pages for
+    this blog, etc.  Vim is an extremely powerful and feature-packed text editor
+    developed to maximize efficiency of editing files.  There is a notoriously
+    steep learning curve, but for those of us that edit lots of text, the reward 
+    is immense.
+    <b>
+    If you are a computer scientists or electrical engineer, you will edit plain
+    text for the rest of your career, so it is worth learning a tool to edit
+    plain text fast!
+    </b>
+    </p>
+    
+    <hr>
+    <h2>Limitations of Classic Editors</h2>
+    <p>
+    Many people I have spoken with haven't put much thought into the editor they
+    use.  Some pick the default editor provided to them, others choose a
+    powerful
+    <abbr title="Integrated Development Environment">IDE</abbr> with an
+    intuitive interface.  
+
+    This allows for a comfortable editing experience, but sacrifices the ability
+    to rapidly make complex changes.  Manipulation is where Vim shines.  Most
+    time in software development is spent editing code, not writing it.  These
+    changes are often repetitive: rename all occurrences of a variable, indent a
+    block of code, ... TODO
+    </p>
+
+    <hr>
+    <h2>Installation</h2>
+    On Linux, install <code>vim</code> from your distribution's package manager
+    or <a href="https://www.vim.org/git.php">compile from source</a>.
+    For Mac or Windows, see Vim's official
+    <a href="https://www.vim.org/download.php">download page</a>.
+
+    <hr>
+    <h2>How to Learn Vim</h2>
+    <p>
+    So, how can you start learning this incredible tool?  As it turns out,
+    there's already a <b>great resource: <i>VimTutor</i></b>.
+    To access the VimTutor on Linux, simply run <code>vimtutor</code> in your
+    terminal.  Mac and Windows should have similar functionality.
+    This teaches the basics of the editor, covering the fundamentals first so
+    that you can get up and <s>running</s> moving as fast as possible.
+    The estimated time to complete the tutorial is 30 minutes, but it may well
+    take longer.
+    There's a lot of information, so don't worry about getting everything right
+    away.
+    For now, focus on taking away the basics of file editing <i>the Vim way</i>.
+    </p>
+
+    <p>
+    Knowing the basics is great, but the only way to learn them is consistent
+    repetition.  My recommendation is to
+    <b>switch your production work to Vim as soon as possible</b>;
+    don't wait for some magic time when you feel comfortable with Vim and
+    ready, it won't happen.  Note that
+    <b>it will be very slow to start -- and this is fine</b>.
+    By using Vim consistently, you'll develop muscle memory for the basics, and
+    an intuition for how it works.
+    You'll find things you know are possible but that you forget -- look these
+    up as they come arise in VimTutor, online, or in Vim's outstanding
+    <a href="https://vimhelp.org/">help pages</a>
+    (also available with <code>:help</code>).
+    Odds are, if you need to do something tedious while manipulating text,
+    someone else has too, and it is likely already solved by a feature within
+    Vim.
+    </p>
+
+    <p>
+    My recommended learning method is cyclic:
+    <ol>
+      <li>Identify an area for improvement.
+      <li>Apply one of Vim's features.
+      <li>Implement this into your workflow <i>every time</i> you do this task.
+      <li>Repeat.
+    </ol>
+    Improve at a pace you can handle without overwhelming yourself.
+    Learn features gradually and as needed.
+    </p>
+
+    <hr>
+    <h2>Common Mistakes</h2>
+    <p>
+    Here are a handful of mistakes I've either committed myself or have
+    frequently watched others commit.
+    </p>
+
+    <h3>Learning too much at once</h3>
+    <p>
+    </p>
+
+    <h3>Not learning enough</h3>
+    <p>
+    </p>
+
+    <h3>Using arrow keys</h3>
+    <p>
+    This one's a little tricky, and some might say overkill.
+    We've all been using arrow keys since we first held a keyboard.  
+    However, using the arrow keys for all movement results in repeated movements
+    of the entire right hand from the home row to 
+    </p>
+
+    <blockquote cite="https://vimhelp.org/usr_02.txt.html#hjkl"><code>
+At first, it may appear that these commands were chosen at random.  After all,
+who ever heard of using l for right?  But actually, there is a very good
+reason for these choices: Moving the cursor is the most common thing you do in
+an editor, and these keys are on the home row of your right hand.  In other
+words, these commands are placed where you can type them the fastest
+(especially when you type with ten fingers).
+    </code></blockquote>
+
+    <h3>Living in <code>insert</code> mode</h3>
+    <p>
+    </p>
+
+    <hr>
+    <h2>Some Helpful Tricks</h2>
+    <p>
+    </p>
+
+    <h3>
+      Regex search and replace
+      <span style="float:right">
+        <a href="https://vimhelp.org/change.txt.html#%3Asubstitute">
+          <code>:help :substitute</code>
+        </a>
+      </span>
+    </h3>
+    <p>
+    </p>
+
+    <h3>
+      The dot (<code>.</code>) command
+      <span style="float:right">
+        <a href="https://vimhelp.org/repeat.txt.html#single-repeat">
+          <code>:help single-repeat</code>
+        </a>
+      </span>
+    </h3>
+    <p>
+    </p>
+
+    <h3>
+      Windows
+      <span style="float:right">
+        <a href="https://vimhelp.org/windows.txt.html#windows">
+          <code>:help windows</code>
+        </a>
+      </span>
+    </h3>
+    <p>
+    </p>
+
+    <h3>
+      Diff mode
+      <span style="float:right">
+        <a href="https://vimhelp.org/diff.txt.html#diff">
+          <code>:help diff</code>
+        </a>
+      </span>
+    </h3>
+    <p>
+    </p>
+
+    <hr>
+    <h2>Conclusion</h2>
+
+    <hr>
+    <h2>Other Resources</h2>
+    <p>
+      <ul>
+        <li>
+          Plugins for editors such as
+          <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">
+            VS Code
+          </a>
+          are available with a limited subset of Vim's features, and these are a
+          great way to get started if you're not quite ready to jump ship.
+        <li>
+      </ul>
+    <p>
+
+  </body>
+</html>
