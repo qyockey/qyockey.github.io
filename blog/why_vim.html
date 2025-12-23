@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en-US" xml:lang="en-US">
+
   <head>
+    <meta charset="utf-8">
     <title>Why Learn Vim?</title>
-    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
   </head>
 
   <body>
@@ -16,40 +18,51 @@
       </ul>
     </nav>
 
-    <hr>
     <h1>Why Learn Vim?  And How?</h1>
-    <p>Written 2025-12-16</p>
+    <p>Written 2025-12-22</p>
+
+    <hr>
+    <h2>Purpose</h2>
+    <p>
+    I often find myself recommending Vim to my peers at Oregon State University.
+    I have created this document as a reference to direct people to in order to
+    help them discover and gain proficiency with Vim.
+    </p>
 
     <hr>
     <h2>Intro</h2>
     <p>
-    I have been actively using Vim for the past 4 years now.  I use Vim pretty
-    much any time I write text: coding, drafting emails, writing web pages for
-    this blog, etc.  Vim is an extremely powerful and feature-packed text editor
-    developed to maximize efficiency of editing files.  There is a notoriously
-    steep learning curve, but for those of us that edit lots of text, the reward 
-    is immense.
+    I have been actively using Vim for the past 4 years now.
+    I use Vim pretty much any time I write text: coding, drafting emails,
+    writing web pages for this blog, etc.
+    Vim is an extremely powerful and feature-packed text editor developed to
+    maximize efficiency of editing files.
+    There is a notoriously steep learning curve, but for those of us that edit
+    lots of text, the reward is immense.
     <b>
-    If you are a computer scientists or electrical engineer, you will edit plain
+    If you are a computer scientist or electrical engineer, you will edit plain
     text for the rest of your career, so it is worth learning a tool to edit
     plain text fast!
     </b>
     </p>
-    
+
     <hr>
     <h2>Limitations of Classic Editors</h2>
     <p>
     Many people I have spoken with haven't put much thought into the editor they
-    use.  Some pick the default editor provided to them, others choose a
-    powerful
+    use.
+    Some pick the default editor provided to them, others choose an
     <abbr title="Integrated Development Environment">IDE</abbr> with an
-    intuitive interface.  
-
+    intuitive interface.
     This allows for a comfortable editing experience, but sacrifices the ability
-    to rapidly make complex changes.  Manipulation is where Vim shines.  Most
-    time in software development is spent editing code, not writing it.  These
-    changes are often repetitive: rename all occurrences of a variable, indent a
-    block of code, ... TODO
+    to rapidly make complex changes.
+    Manipulation is where Vim shines.
+    These changes are often repetitive: rename all occurrences of a variable,
+    indent each line a block of code, append a semicolon to several lines, etc.
+    Where other editors only support changing text in one place at a time,
+    Vim is <i>designed around</i> making multiple changes at the same time.
+    And when only single changes need to be made, Vim's motions allow for
+    lightning-fast movement throughout your files.
     </p>
 
     <hr>
@@ -60,12 +73,14 @@
     <a href="https://www.vim.org/download.php">download page</a>.
 
     <hr>
-    <h2>How to Learn Vim</h2>
+    <h2 id=learn>How to Learn Vim</h2>
     <p>
-    So, how can you start learning this incredible tool?  As it turns out,
-    there's already a <b>great resource: <i>VimTutor</i></b>.
+    So, how can you start learning this powerful tool?
+    Packaged alongside Vim, there's an
+    <b>incredible resource: <i>VimTutor</i></b>.
     To access the VimTutor on Linux, simply run <code>vimtutor</code> in your
-    terminal.  Mac and Windows should have similar functionality.
+    terminal.
+    Mac and Windows should have similar functionality.
     This teaches the basics of the editor, covering the fundamentals first so
     that you can get up and <s>running</s> moving as fast as possible.
     The estimated time to complete the tutorial is 30 minutes, but it may well
@@ -77,11 +92,12 @@
 
     <p>
     Knowing the basics is great, but the only way to learn them is consistent
-    repetition.  My recommendation is to
+    repetition.
+    My recommendation is to
     <b>switch your production work to Vim as soon as possible</b>;
     don't wait for some magic time when you feel comfortable with Vim and
-    ready, it won't happen.  Note that
-    <b>it will be very slow to start -- and this is fine</b>.
+    ready, it won't happen.
+    Note that <b>it will be very slow to start -- and this is fine</b>.
     By using Vim consistently, you'll develop muscle memory for the basics, and
     an intuition for how it works.
     You'll find things you know are possible but that you forget -- look these
@@ -112,20 +128,17 @@
     frequently watched others commit.
     </p>
 
-    <h3>Learning too much at once</h3>
-    <p>
-    </p>
-
-    <h3>Not learning enough</h3>
-    <p>
-    </p>
-
-    <h3>Using arrow keys</h3>
+    <h3>Using arrow keys or mouse</h3>
     <p>
     This one's a little tricky, and some might say overkill.
-    We've all been using arrow keys since we first held a keyboard.  
-    However, using the arrow keys for all movement results in repeated movements
-    of the entire right hand from the home row to 
+    We've all been using arrow keys and the mouse since first using a computer,
+    but causes lots of unnecessary hand movement.
+    Using HJKL for movement prevents this by keeping both your hands on the home
+    row at all times, and makes editing a lot faster.
+    This may seem pedantic, but it feels very nice once you get comfortable with
+    it.
+    This is a case where you simply need to trust the Vim developers.
+    I too was reluctant to adopt HJKL for movement, but I'm very glad I did.
     </p>
 
     <blockquote cite="https://vimhelp.org/usr_02.txt.html#hjkl"><code>
@@ -137,13 +150,31 @@ words, these commands are placed where you can type them the fastest
 (especially when you type with ten fingers).
     </code></blockquote>
 
+    <cite>
+      Excerpt from Vim's help manual
+      <a href="https://vimhelp.org/usr_02.txt.html#hjkl">:help hjkl</a>
+    </cite>
+
     <h3>Living in <code>insert</code> mode</h3>
     <p>
+    I see this one a lot with beginners.
+    They learned how add text with insert mode, and from there treat it like a
+    standard editor: moving around with arrow keys, using the backspace key to
+    delete text, etc.
+    This is fine, but it takes away all advantages of using Vim.
+    Insert mode should be used <i>exclusively</i> for when you are actively
+    typing new text.
+    The rest of the time should be in normal mode -- it is called <i>normal</i>
+    after all.
+    Learning how to utilize the power of normal mode is one of the first big
+    hurdles to achieving proficiency with Vim.
     </p>
 
     <hr>
     <h2>Some Helpful Tricks</h2>
     <p>
+    Here are some of my favorite tricks I like to use to speed up my workflow.
+    I haven't included examples, but many can be found online.
     </p>
 
     <h3>
@@ -155,6 +186,32 @@ words, these commands are placed where you can type them the fastest
       </span>
     </h3>
     <p>
+    This is a big one.
+    I find that I often need to make the same change to many items scattered
+    around my file.
+    A simple command of the form <code>:%s/&lt;find&gt;/&lt;replace&gt;/g</code>
+    matches all instances of <code>&lt;find&gt;</code> and changes them to
+    <code>&lt;replace&gt;</code>.
+    What differentiates Vim's search and replace from others is that it uses
+    powerful pattern-matching with
+    <a href="https://en.wikipedia.org/wiki/Regular_expression">
+      regular expressions</a>.
+    </p>
+
+    <h3>
+      Visual block mode
+      <span style="float:right">
+        <a href="https://vimhelp.org/visual.txt.html#visual-block">
+          <code>:help visual-block</code>
+        </a>
+      </span>
+    </h3>
+    <p>
+    Another super simple technique with many uses.
+    Visual block mode allows you to select text in a rectangle.
+    Sections of similar lines can be deleted simultaneously with <code>d</code>.
+    By pressing <code>I</code> or <code>A</code>, text can be added in bulk to
+    multiple lines at the same time.
     </p>
 
     <h3>
@@ -166,6 +223,12 @@ words, these commands are placed where you can type them the fastest
       </span>
     </h3>
     <p>
+    The dot command is so simple, yet one of the most versatile commands Vim has
+    to offer.
+    Pressing the dot key in normal mode repeats the previously executed command.
+    There are many uses to this, and it discussed at length in chapter 1 of
+    <a href="https://pragprog.com/titles/dnvim2/practical-vim-second-edition/">
+      Practical Vim</a>.
     </p>
 
     <h3>
@@ -177,6 +240,16 @@ words, these commands are placed where you can type them the fastest
       </span>
     </h3>
     <p>
+    By default, Vim only shows one file on the screen at a time.
+    Using windows, Vim can display multiple files at once.
+    <ul>
+      <li> <code>&lt;C-W&gt; s</code> (ctrl-w followed by s) splits the screen
+        horizontally.
+      <li> <code>&lt;C-W&gt; v</code> splits the screen vertically.
+      <li> <code>&lt;C-W&gt; c</code> closes the active window.
+      <li> <code>&lt;C-W&gt;</code> followed by h, j, k, or l moves between
+        windows.
+    </ul>
     </p>
 
     <h3>
@@ -188,25 +261,81 @@ words, these commands are placed where you can type them the fastest
       </span>
     </h3>
     <p>
+    Diff mode shows two files side-by-side and highlights the differences
+    between them.
+    Diff mode can be entered on the command line by launching Vim with
+    <code>vim -d file1 file2</code>, or inside Vim by running
+    <code>vert diffsplit file2</code>.
+    This allows for easy comparison of multiple related files and cherry-picking
+    specific parts of each file to keep and which to change.
+    </p>
+
+    <p>
+    For example, when creating this page, I ended up with two similar but
+    different HTML <code>&lt;head&gt;</code> sections.
+    Using diff mode, I was able to easily identify that I forgot to specify
+    <code>charset="utf-8"</code> and I was missing a <code>&lt;nav&gt;</code>
+    element for my GitHub.
+    With both files open and the differences highlighted, I was able to quickly
+    copy over the missing lines.
     </p>
 
     <hr>
     <h2>Conclusion</h2>
+    <p>
+    Many programmers often overlook Vim when selecting their editor.
+    However, it is an extremely powerful tool for those of us that consistently
+    edit plain text files.
+    It has a steep learning curve, to be sure, but the benefit is immense.
+    Vim is only as hard as you need it to be.
+    Identify what you want to learn, then learn it gradually, just a few
+    keybinds at a time.
+    Get comfortable with those, then learn a few more.
+    You'll be flying around files in no time.
+    </p>
 
     <hr>
-    <h2>Other Resources</h2>
+    <h2>Resources</h2>
     <p>
       <ul>
+        <li><a href="#learn">VimTutor</a>.
+          Seriously, VimTutor should be your first stop getting started.
+        <li>The book
+          <a href="https://pragprog.com/titles/dnvim2/practical-vim-second-edition/">
+            Practical Vim
+          </a> by Drew Neil is intended for users familiar with the basics of
+          Vim and provides information and techniques to improve your
+          productivity with Vim.
+        <li>YouTuber ThePrimeagen has created
+          <a href="https://www.youtube.com/playlist?list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R">
+            this tutorial playlist
+          </a>
+          with helpful tips to learn Vim motions and configure the editor to
+          your liking.
+        <li><a href="https://vim.rtorr.com/">This cheatsheet</a> by Richard
+          Torruellas
         <li>
           Plugins for editors such as
           <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">
             VS Code
           </a>
-          are available with a limited subset of Vim's features, and these are a
-          great way to get started if you're not quite ready to jump ship.
-        <li>
+          are available with a limited subset of Vim's features.
+          These are a great way to get started if you're not quite ready to jump
+          ship.
       </ul>
+    </p>
+
+    <hr>
+    <h3>
+    Feedback?
+    </h3>
     <p>
+    Email me at first initial last name AT tutanota dot DE.
+    </p>
+
+    <hr>
+    <br>
+    <a href="https://notbyai.fyi"><img src="https://notbyai.fyi/img/written-by-human-not-by-ai-white.svg" loading="lazy" alt="Written by human, not by AI"></a>
 
   </body>
 </html>
