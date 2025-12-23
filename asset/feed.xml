@@ -6,10 +6,25 @@
     <description>Quinn Yockey Blog</description>
 	
     <item>
-        <title></title>
-        <link></link>
-        <pubDate></pubDate>
-        <description></description>
+        <title>Why Learn Vim?  And How?</title>
+        <link>https://qyockey.github.io/blog/why_vim.html</link>
+        <pubDate> Tue, 22 Dec 2025 00:00:00 GMT</pubDate>
+        <description>
+            I often find myself recommending Vim to my peers at Oregon State
+            University.  I have created this document as a reference to direct
+            people to in order to help them discover and gain proficiency with
+            Vim.
+        </description>
+    </item>
+	
+    <item>
+        <title>I'm making a website!</title>
+        <link>https://qyockey.github.io/blog/my_website.html</link>
+        <pubDate> Tue, 22 Dec 2025 00:00:00 GMT</pubDate>
+        <description>
+            Look Mom! I'm making a website! I'm on the internet now and I'm
+            gonna be famous!
+        </description>
     </item>
 	
     </channel>
