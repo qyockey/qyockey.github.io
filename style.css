@@ -51,9 +51,7 @@ a:hover
 
 a:visited
 {
-	/* color: #24a; */
-        /* TODO Revert */
-	color: #04f;
+	color: #84c;
 	text-decoration: none;
 }
 
