@@ -24,7 +24,7 @@ colgroup {
         display: table-column-group;
 }
 
-nav ul {
+nav menu {
         top: 0;
         list-style-type: none;
         margin: 0;
@@ -32,7 +32,7 @@ nav ul {
         display: flex;
 }
 
-nav ul li a {
+nav menu li a {
         display: block;
         padding: 1em 1.5em 1em 0em;
 }
@@ -54,4 +54,3 @@ a:visited
 	color: #84c;
 	text-decoration: none;
 }
-
