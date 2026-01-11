@@ -55,3 +55,18 @@ a:visited
 	color: #84c;
 	text-decoration: none;
 }
+
+figure, figcaption  {
+        text-align: center;
+}
+
+img {
+        max-width: 100%;
+}
+
+.image-row {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+}
