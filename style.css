@@ -18,6 +18,7 @@ p, li {
 
 td {
         padding-right: 1em;
+        vertical-align: top;
 }
 
 colgroup {
