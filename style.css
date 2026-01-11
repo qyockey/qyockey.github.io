@@ -2,14 +2,12 @@ body {
         margin: 0 auto;
         max-width: min(100ch, 90%);
         padding: 0 0;
+        font-size: 16px;
+        font-family: "Tahoma", "Verdana", "Trebuchet MS", sans-serif;
 }
 
 h1 {
         font-variant-caps: small-caps;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-        font-family: "Georgia", "Times New Roman", serif;
 }
 
 p, li {
