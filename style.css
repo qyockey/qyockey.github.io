@@ -36,20 +36,17 @@ nav menu li a {
         padding: 1em 1.5em 1em 0em;
 }
 
-a:link, a:active
-{
+a:link, a:active {
 	color: #04f;
 	text-decoration: none;
 }
 
-a:hover
-{
+a:hover {
 	color: #04f;
 	text-decoration: underline;
 }
 
-a:visited
-{
+a:visited {
 	color: #84c;
 	text-decoration: none;
 }
