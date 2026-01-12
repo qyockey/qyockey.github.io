@@ -8,6 +8,14 @@
     <description>Quinn Yockey Blog</description>
 
     <item>
+        <title>Asking for Help</title>
+        <link>https://qyockey.github.io/blog/ask_for_help.html</link>
+        <guid isPermaLink="false">/blog/ask_for_help.html</guid>
+        <pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate>
+        <description>After my radio broke, I reached out to my local radio club for help, and got far more than I expected.</description>
+    </item>
+
+    <item>
         <title>Why Learn Vim?  And How?</title>
         <link>https://qyockey.github.io/blog/why_vim.html</link>
         <guid isPermaLink="false">/blog/why_vim.html</guid>
