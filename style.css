@@ -53,6 +53,7 @@ a:visited {
 
 figure, figcaption  {
         text-align: center;
+        font-style: italic;
 }
 
 img {
